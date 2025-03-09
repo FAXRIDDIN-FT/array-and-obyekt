@@ -1,113 +1,149 @@
-{//masala 01
-    let son = [1, 2, 3, 4, 5, 6]
-    for (i = 0; i < son.length; i++) {
-        if (son[i] % 2 === 1) {
+{//masala 01 bu forda qilingan
+    const array = [2, 6, 3, 7]
+    const arr = []
+    for (let i = 0; i < array.length; i++) {
+        arr[i] = array[i] ** 2
+    }
+    console.log(arr);
+}
+{//masala 01 bu whileda qilingan
+    const array = [2, 6, 3, 7]
+    const arr = []
+    let i = 0
+    while (i < array.length) {
+        arr[i] = array[i] ** 2
+        i++
+    }
+    console.log(arr);
+}
+{//masala 01 bu do whileda qilingan
+    const array = [2, 6, 3, 7]
+    const arr = []
+    let i = 0
+    do {
+        arr[i] = array[i] ** 2
+        i++
+    } while (i < array.length)
 
-            console.log(son[i] ** 2);
+    console.log(arr);
+}
+
+{//masala 02 bu forda qilingan
+    const arr = [5, -3, 4, - 6]
+    const array = []
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            array[i] = -arr[i];
+        } else {
+            array[i] = arr[i];
         }
     }
-}
-{//masala 02
-    const nuber = [5, -6, 3, 4, -9]
-    for (i = 0; i < nuber.length; i++) {
-        if (nuber[i] < 0) {
-            console.log(nuber[i]);
+    console.log(array);
 
+}
+{//masala 02 bu while da qilingan
+    const arr = [5, -3, 4, -6]
+    const array = []
+    let i = 0
+    while (i < arr.length) {
+        if (arr[i] < 0) {
+            array[i] = -arr[i];
+        } else {
+            array[i] = arr[i];
+        }
+        i++
+    }
+    console.log(array);
+
+}
+{//masala 02 bu do while da qilingan
+    const arr = [5, -3, 4, -6]
+    const array = []
+    let i = 0
+    do {
+        if (arr[i] < 0) {
+            array[i] = -arr[i];
+        } else {
+            array[i] = arr[i];
+        }
+        i++
+    } while (i < arr.length)
+    console.log(array);
+
+}
+
+{//masala 03 bu forda qilingan
+    const ism = ["sarvar", "murod", "salim"]
+    const yangi = []
+    for (i = 0; i < ism.length; i++) {
+        yangi[i] = ism[i] + "xon"
+    }
+    console.log(yangi);
+
+}
+{//masala 03 bu while da qilingan
+    const ism = ["sarvar", "murod", "salim"]
+    const yangi = []
+    let i = 0
+    while (i < ism.length) {
+        yangi[i] = ism[i] + "xon"
+        i++
+    }
+    console.log(yangi);
+}
+{//masala 03 bu while da qilingan
+    const ism = ["sarvar", "murod", "salim"]
+    const yangi = []
+    let i = 0
+    do {
+        yangi[i] = ism[i] + "xon"
+        i++
+    } while (i < ism.length)
+    console.log(yangi);
+
+}
+
+{ //masala 04 for da qilingan
+    const shart = [true, false, true]
+    const NEWshart = []
+    for (i = 0; i < shart.length; i++) {
+        if (shart[i]) {
+            NEWshart[i] = "Ha";
+        } else {
+            NEWshart[i] = "Yoq";
         }
     }
-}
-{//masala 03
-    let a = 0
-    const onliklar = []
-    for (i = 10; i <= 100; i += 10, a++) {
-        onliklar[a] = i
+    console.log(NEWshart);
 
-        //console.log(onliklar[a]);
-        // agar arraydan tashqariga chiqarmoqchi bolsak 21 qatordagi codeni qolaymiz
-    }
-    console.log(onliklar);
-    //mana ustoz ikkita yoli ham bor qaysini qilishni bilamay ikkalasini ham qildim
 }
-{//masala 04
-    let array = [12, 45, 78, 23, 56, 89, 67];
-    let max = array[0];
-
-    for (let i = 1; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i];
+{ //masala 04 while da qilingan
+    const shart = [true, false, true]
+    const NEWshart = []
+    let i = 0;
+    while (i < shart.length) {
+        if (shart[i]) {
+            NEWshart[i] = "Ha";
+        } else {
+            NEWshart[i] = "Yoq";
         }
+        i++
     }
-
-    console.log(max)
-
-}
-{ //masala 05
-    const fruits = ["apple", "banana", "cherry", "date"];
-    fruits.reverse();
-
-    console.log(fruits);
+    console.log(NEWshart);
 
 }
-{ //masala 06
-    const number = [3, 8, 12, 5, 9]
-    const k = 12
-
-    for (let i = 0; i < number.length; i++) {
-        if (number[i] === k) {
-            console.log(`${k} massivda mavjud`)
+{ //masala 04 do while da qilingan
+    const shart = [true, false, true]
+    const NEWshart = []
+    let i = 0;
+    do {
+        if (shart[i]) {
+            NEWshart[i] = "Ha";
+        } else {
+            NEWshart[i] = "Yoq";
         }
-    }
-
-
-}
-{//masala 07
-    let son = [2, 4, 6, 8, 10]
-    for (i = 0; i < son.length; i++) {
-        console.log(son[i] ** 2);
-
-    }
+        i++
+    } while (i < shart.length)
+    console.log(NEWshart);
 
 }
-{ //masala 08
-    const car = {
-        brend: "tesla",
-        model: "x modele"
-    }
-    car.year = 2023;
-    console.log(car);
 
-}
-{// masala 09
-    const student = {
-        name: "husan",
-        courses: ["Javascript", "React", "Node.js"]
-    };
-    for (i = 0; i < student.courses.length; i++) {
-        console.log(student.courses[i]);
-    }
-}
-{ //masala 10
-    const user = {
-        username: "coder123",
-        password: "12345",
-        email: "coder@example.com"
-    };
-    delete user.password
-    console.log(user);
-
-
-}
-{ //masala 11
-    let array1 = [1, 2, 3, 4, 5]
-    let array2 = [4, 5, 6, 7, 8]
-    let set1 = new Set(arr1)
-    let allElements = []
-    for (let i = 0; i < array2.length; i++) {
-        if (set1.has(array2[i])) {
-            allElements.push(arr2[i])
-        }
-    }
-
-    console.log(allElements)
-
-}
